@@ -14,7 +14,8 @@
       {"zastavka" : "Větrov", "pasmo" : "P"},
       {"zastavka" : "Apolinářská", "pasmo" : "P"},
       {"zastavka" : "Na Bojišti", "pasmo" : "P"},
-      {"zastavka" : "Kateřinská", "pasmo" : "P"}
+      {"zastavka" : "Kateřinská", "pasmo" : "P"},
+      {"zastavka" : "I. P. Pavlova", "pasmo" : "P"}
     ]
   }
 }
