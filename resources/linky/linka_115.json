@@ -1,0 +1,15 @@
+{
+  "linka" : {
+    "cisloLinky" : 115,
+    "finalniZastavka" : "CHODOV",
+    "zastavky" : [
+      {"zastavka" : "Chodov", "pasmo" : "P"},
+      {"zastavka" : "Pod Chodovem", "pasmo" : "P"},
+      {"zastavka" : "Knovízská", "pasmo" : "P"},
+      {"zastavka" : "Městský archiv Chodovec", "pasmo" : "P"},
+      {"zastavka" : "Blažimská", "pasmo" : "P"},
+      {"zastavka" : "Chodovec", "pasmo" : "P"},
+      {"zastavka" : "Chodov", "pasmo" : "P"}
+    ]
+  }
+}
