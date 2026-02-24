@@ -1,0 +1,20 @@
+{
+  "linka" : {
+    "cisloLinky" : 148,
+    "finalniZastavka" : "I. P. PAVLOVA",
+    "zastavky" : [
+      {"zastavka" : "I. P. Pavlova", "pasmo" : "P"},
+      {"zastavka" : "Dětská nemocnice Karlov", "pasmo" : "P"},
+      {"zastavka" : "Apolinářská", "pasmo" : "P"},
+      {"zastavka" : "Větrov", "pasmo" : "P"},
+      {"zastavka" : "U Nemocnice", "pasmo" : "P"},
+      {"zastavka" : "Václavská", "pasmo" : "P"},
+      {"zastavka" : "Karlovo náměstí", "pasmo" : "P"},
+      {"zastavka" : "U Nemocnice", "pasmo" : "P"},
+      {"zastavka" : "Větrov", "pasmo" : "P"},
+      {"zastavka" : "Apolinářská", "pasmo" : "P"},
+      {"zastavka" : "Na Bojišti", "pasmo" : "P"},
+      {"zastavka" : "Kateřinská", "pasmo" : "P"}
+    ]
+  }
+}
