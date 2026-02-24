@@ -18,8 +18,8 @@ public class MyFrame extends JFrame {
 
     private JsonLoad jsonLoader;
 
-    public MyFrame(){
-        this.jsonLoader = JsonLoad.loadGameDataFromResources("linky/linka_115.json");
+    public MyFrame(String nazevSouboru){
+        this.jsonLoader = JsonLoad.loadGameDataFromResources("linky/" + nazevSouboru);
         setProperties();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        this.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 0));
