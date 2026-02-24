@@ -17,7 +17,7 @@ public class ZastavkaPasmo extends JPanel {
     public ZastavkaPasmo(Linka aktualniLinka) {
         this.aktualniLinka = aktualniLinka;
         this.setPreferredSize(new Dimension(delka, vyska));
-        this.setBackground(new Color(0, 0, 0));
+        this.setBackground(new Color(51, 51, 51));
         this.setLayout(null);
         setPasmo();
     }
@@ -26,7 +26,7 @@ public class ZastavkaPasmo extends JPanel {
         this.pasmo = new JLabel(aktualniLinka.getZastavky().get(aktualniLinka.getIndexZastavky()).getPasmo());
         this.pasmo.setBounds(25, 0, delka-20, vyska);
         this.pasmo.setFont(new Font("Arial", Font.BOLD, 90));
-        this.pasmo.setForeground(Color.WHITE);
+        this.pasmo.setForeground(new Color(255, 255, 255));
         this.add(pasmo);
     }
 
