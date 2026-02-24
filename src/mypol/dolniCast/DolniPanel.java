@@ -13,6 +13,7 @@ public class DolniPanel extends JPanel {
 
     private ZastavkaPasmo pasmo;
     private Teplomer teplomer;
+    private AktualniZastavka aktualniZastavka;
 
     private Linka aktualniLinka;
 
@@ -29,11 +30,13 @@ public class DolniPanel extends JPanel {
     private void setProperties(){
         this.pasmo = new ZastavkaPasmo(aktualniLinka);
         this.teplomer = new Teplomer(vyska);
+        this.aktualniZastavka = new AktualniZastavka(aktualniLinka);
     }
 
     private void addPanels(){
         this.add(this.pasmo);
         this.add(this.teplomer);
+        this.add(this.aktualniZastavka);
     }
 
 }
