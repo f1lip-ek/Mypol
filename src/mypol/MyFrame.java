@@ -29,9 +29,9 @@ public class MyFrame extends JFrame {
     }
 
     private void setProperties(){
-        this.dolniPanel = new DolniPanel();
+        this.dolniPanel = new DolniPanel(jsonLoader.getLinka());
         this.horniPanel = new HorniPanel(jsonLoader.getLinka());
-        this.stredovyPanel = new StredovyPanel();
+        this.stredovyPanel = new StredovyPanel(jsonLoader.getLinka());
         this.panel = new JPanel();
     }
 

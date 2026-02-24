@@ -8,6 +8,8 @@ public class Linka {
     private String finalniZastavka;
     private ArrayList<Zastavka> zastavky;
 
+    private int indexZastavky = 0;
+
 
     public String getCisloLinky() {
         return cisloLinky;
@@ -15,6 +17,18 @@ public class Linka {
 
     public String getFinalniZastavka() {
         return finalniZastavka;
+    }
+
+    public int getIndexZastavky() {
+        return indexZastavky;
+    }
+
+    public void setIndexZastavky() {
+        this.indexZastavky++;
+    }
+
+    public ArrayList<Zastavka> getZastavky() {
+        return zastavky;
     }
 
     @Override
