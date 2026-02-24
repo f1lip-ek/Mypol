@@ -1,6 +1,7 @@
 package mypol.dolniCast;
 
 import mypol.logika.json.Linka.Linka;
+import mypol.stred.Teplomer;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,6 +12,7 @@ public class DolniPanel extends JPanel {
     private final int vyska = 128;
 
     private ZastavkaPasmo pasmo;
+    private Teplomer teplomer;
 
     private Linka aktualniLinka;
 
@@ -26,10 +28,12 @@ public class DolniPanel extends JPanel {
 
     private void setProperties(){
         this.pasmo = new ZastavkaPasmo(aktualniLinka);
+        this.teplomer = new Teplomer(vyska);
     }
 
     private void addPanels(){
         this.add(this.pasmo);
+        this.add(this.teplomer);
     }
 
 }
