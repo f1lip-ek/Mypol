@@ -17,16 +17,26 @@ public class AktualniZastavka extends JPanel {
     public AktualniZastavka(Linka aktualniLinka) {
         this.aktualniLinka = aktualniLinka;
         this.setPreferredSize(new Dimension(delka, vyska));
-        this.setBackground(new Color(51, 51, 51));
         this.setLayout(null);
         setCisloLinky();
+        setColor(true);
     }
 
     private void setCisloLinky(){
         this.zastavka = new JLabel(aktualniLinka.getZastavky().get(aktualniLinka.getIndexZastavky()).getZastavka());
         this.zastavka.setBounds(15, 1, delka, vyska);
         this.zastavka.setFont(new Font("Arial", Font.BOLD, 50));
-        this.zastavka.setForeground(new Color(255, 255, 255));
         this.add(zastavka);
+    }
+
+    public void setColor(boolean gray){
+        if(gray){
+            this.zastavka.setText(aktualniLinka.getZastavky().get(aktualniLinka.getIndexZastavky()).getZastavka());
+            this.setBackground(new Color(51, 51, 51));
+            this.zastavka.setForeground(new Color(255, 255, 255));
+        }else {
+            this.setBackground(new Color(120, 120, 120));
+            this.zastavka.setForeground(new Color(23, 23, 23));
+        }
     }
 }

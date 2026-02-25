@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Teplomer extends JPanel {
 
-    private final int delka = 20;
+    private final int delka = 10;
     private int vyska;
 
 
