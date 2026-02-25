@@ -29,6 +29,10 @@ public class AktualniZastavka extends JPanel {
         this.add(zastavka);
     }
 
+    public void setText(){
+        this.zastavka.setText(aktualniLinka.getZastavky().get(aktualniLinka.getIndexZastavky()).getZastavka());
+    }
+
     public void setColor(boolean gray){
         if(gray){
             this.zastavka.setText(aktualniLinka.getZastavky().get(aktualniLinka.getIndexZastavky()).getZastavka());

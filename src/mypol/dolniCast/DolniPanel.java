@@ -36,9 +36,9 @@ public class DolniPanel extends JPanel {
         this.setLayout(layout);
         setProperties();
         addPanels();
-        this.add(pristiZastavka, "panel1");
-        this.add(tatoZastavka, "panel2");
-        this.layout.show(this, "panel1");
+        this.add(pristiZastavka, "pristiZastavka");
+        this.add(tatoZastavka, "tatoZastavka");
+        this.layout.show(this, "pristiZastavka");
     }
 
     private void setProperties(){
@@ -70,4 +70,29 @@ public class DolniPanel extends JPanel {
         this.tatoZastavka.add(this.zastavkaTed);
     }
 
+    public void showL(String nazev){
+        if (nazev.equals("pristiZastavka")){
+            aktualniLinka.setIndexZastavky();
+            if (aktualniLinka.getIndexZastavky() < aktualniLinka.getZastavky().size()){
+                this.pasmo.setText();
+                this.aktualniZastavka.setText();
+                this.layout.show(this, "pristiZastavka");
+            }else{
+                throw new ArrayIndexOutOfBoundsException("Neni index");
+            }
+
+        }else if (nazev.equals("tatoZastavka")){
+            this.zastavkaPasmo.setText();
+            this.zastavkaTed.setText();
+            this.layout.show(this, "tatoZastavka");
+        }
+    }
+
+    public CardLayout getLayout() {
+        return this.layout;
+    }
+
+    public Linka getAktualniLinka() {
+        return aktualniLinka;
+    }
 }

@@ -29,6 +29,10 @@ public class ZastavkaPasmo extends JPanel {
         this.add(pasmo);
     }
 
+    public void setText(){
+        this.pasmo.setText(aktualniLinka.getZastavky().get(aktualniLinka.getIndexZastavky()).getPasmo());
+    }
+
     public void setColor(boolean gray){
         if(gray){
             this.pasmo.setText(aktualniLinka.getZastavky().get(aktualniLinka.getIndexZastavky()).getPasmo());
